@@ -1,0 +1,143 @@
+.header {
+width: 100%;
+height: 70px;
+display: flex;
+flex-wrap: wrap;
+margin-bottom: 25px;
+font-size: 20px;
+}
+
+.header-left {
+float: left;
+margin-left: 2vw;
+}
+
+.header-right {
+margin-left: auto;
+float: right; 
+}
+
+.header-below {
+display: flex;
+font-size: 25px;
+margin-left: 2vw;
+margin-bottom: 3vh;
+margin-top: -4vh;;
+}
+
+.header-side {
+position: fixed;
+padding: 25px;
+height: 70px;
+margin-bottom: 25px;
+font-size: 20px;
+}
+
+.options {
+width: 50%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.option {
+  cursor: pointer;
+}
+
+.register {
+margin-right: 20px;
+}
+
+.login {
+margin-right: -20px; 
+}
+
+.logo {
+width: 40px;
+height: auto;
+margin-right: 6px !important;
+}
+
+.logo-right {
+float: right;
+}
+
+.hamburger {
+display: none;
+width: 40px;
+}
+
+.side-links {
+/*padding: 8px 18px 8px 32px;*/
+font-size: 25px;
+color: red;
+display: inline-flex;
+z-index: 2;
+text-align: right;
+/*left: 30px;*/
+margin-top: -5px;
+margin-right: 2vw;
+}
+
+.navSlider {
+s img {
+display: none;
+}
+
+display: block;
+height: 100%; /* 100% Full-height */
+width: 29vw; 
+position: fixed; 
+z-index: 1; /* Stay on top */
+top: 0; /* Stay at the top */
+right: 0px;
+background-color: #111; /* Black*/
+overflow-x: hidden; /* Disable horizontal scroll */
+padding-top: 60px; /* Place content 60px from the top */
+transition: 0.5s; /* 0.5 second transition effect to slide in the navSlider */
+opacity: 0.7;
+}
+
+.closebtn {
+z-index: 2;
+position: relative;
+font-size: 36px;
+color: white;
+z-index: 2;
+float: right;
+bottom: 7vh;
+margin-right: 2vw;
+}
+
+.no-button {
+display: none;
+}
+
+a:hover {
+color: red;
+}
+
+.top-links {
+display: inline-flex;
+margin-top: 1vh;
+margin-right: 1vw;
+float: right;
+font-size: 25px;
+}
+
+.story-links {
+margin-left: 4vw;
+}
+
+.login-side {
+  left: 20px;
+}
+
+.register-side {
+  top: -2vh;
+}
+
+.sign-out {
+  left: 7px;
+}

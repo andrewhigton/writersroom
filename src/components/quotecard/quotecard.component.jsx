@@ -1,0 +1,67 @@
+import React, { Fragment, useState, useEffect } from 'react';
+import './quotecard.scss';
+
+const QuoteCard = () => {
+
+const quotesArray = {
+	A: ['There is nothing to writing. All you do is sit down at a typewriter and bleed',
+	' — Ernest Hemingway'
+	],
+	B: ['If you don\'t have time to read, you don\'t have the time (or the tools) to write. Simple as that',
+	' ― Stephen King'],
+	C: ['We write to taste life twice, in the moment and in retrospect',
+	' ― Anais Nin'], 
+	D: ['No tears in the writer, no tears in the reader. No surprise in the writer, no surprise in the reader',
+	'― Robert Frost'
+	],
+	E: ['Don\'t tell me the moon is shining; show me the glint of light on broken glass',
+	' ― Anton Chekhov'
+	],
+	F: ['A writer is someone for whom writing is more difficult than it is for other people',
+	' ― Thomas Mann, '
+	],
+	G: ['The process of writing is just reading what I’ve written and looking for where the energy is in the prose, then going in the direction of that',
+	' — George Saunders'
+	],
+	H: ['Tomorrow may be hell, but today was a good writing day, and on the good writing days nothing else matters',
+ 	' ― Neil Gaiman'
+	],
+	I: ['People will give you all sorts of advice about writing, but if you are not writing something you like, no one else will like it either',
+	' ― Meg Cabot'
+	],
+	J: ['A short story is a love affair, a novel is a marriage. A short story is a photograph; a novel is a film',
+	' ― Lorrie Moore'
+	]
+}
+
+	const [quote, setQuote] = useState([]) 
+
+	useEffect(() => {
+		const timeoutID = setTimeout(() => {
+        setQuote(randomQuote(quotesArray));
+    }, 3000);
+    return () => clearTimeout(timeoutID );
+	}, [quotesArray]);
+
+	function randomQuote(obj) {
+    let keys = Object.keys(obj);
+    return obj[keys[ keys.length * Math.random() << 0]]
+	};
+
+return (
+  <Fragment>
+  <div className="image-quote">
+    	<div className="writer-image">
+    	<img className="writer-pic" alt="" src="data:image/jpeg;base64,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"/>
+    	</div>
+    	<div className="writer-quote">
+		<p>{quote[0]}</p>
+		<p className="writer-atrib">{quote[1]}</p>
+		</div>
+   </div>
+
+   </Fragment> 
+ )
+}
+
+export default QuoteCard;

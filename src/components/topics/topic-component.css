@@ -1,0 +1,37 @@
+.pageHeader {
+	display: inline-block;
+	font-family: 'Open Sans Condensed';	
+	padding: 1px 15px 1px 15px;
+	background-color: #008B8B;
+	color: white; 
+	font-weight: 351;
+	width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.backButton {
+	margin-bottom: 30px;
+}
+
+.pageHeaderLeft {
+	float: left;
+	font-family: 'Open Sans Condensed';
+	font-size: 20px;
+	margin-top: 0.5vh;
+    margin-left: -0.5vw;
+}
+
+.pageHeaderRight {
+	position: relative;
+	float: right;
+	color: #008B8B;
+    background-color: white;
+    margin-top: 7px;
+    padding: 0px 5px 0px 5px;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+}

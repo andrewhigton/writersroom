@@ -13,5 +13,6 @@ src/firebase/
 .env.development.local
 .env.test.local
 .env.production.local
+REACTREADME.md
 
 npm-debug.log*

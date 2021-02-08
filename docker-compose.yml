@@ -1,0 +1,26 @@
+version: "3.6"
+services:
+  # react-app
+  thewritersroom:
+    container_name: frontend
+    build: ./
+    command: npm start
+    working_dir: /usr/src/writersroom
+    ports: 
+      - "5000:5000"
+    volumes: 
+      - ./:/usr/src/writersroom
+
+
+  firestore_emulator:
+    image: mtlynch/firestore-emulator
+    environment:
+      - FIRESTORE_PROJECT_ID=writer-818e0
+      - PORT=8200
+  app:
+    image: thewritersroom
+    environment:
+      - FIRESTORE_EMULATOR_HOST=firestore_emulator:8200
+      - FIRESTORE_PROJECT_ID=writer-818e0
+  depends_on:
+    - firestore_emulator

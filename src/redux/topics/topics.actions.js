@@ -7,8 +7,8 @@ import {
 
 export const getAllTopicsApi = () => async dispatch => {       
    	let topics = firestore.collection('topics')
-    topics.orderBy('date', 'desc').get(doc => {
-    // .onSnapshot(doc => {
+    topics.orderBy('date', 'desc')
+    .onSnapshot(doc => {
       if(doc) {
         dispatch(getAllTopics(doc))
         }

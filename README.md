@@ -12,6 +12,7 @@ Built using React and Redux, with a Google Firestore database and hosted on Fire
 Try it [here](https://writer-818e0.web.app/). Users can log in with an example account:
 
 username: alex@testemail.com 
+
 password: password
 
 ## Other features that may be included at a later date: ##

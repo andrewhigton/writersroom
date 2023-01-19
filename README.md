@@ -3,9 +3,9 @@
 
 ## Description ## 
 
-A social-media app for the sharing of short stories with a discussion-boards for writers. Built as an exercise to improve on an existing online short-story writing group hosted on an all-purpose forum. 
+A social-media app for the sharing of short stories with a discussion-board for writers. Built as an exercise to improve on an existing online short-story writing group hosted on an all-purpose forum. 
 
-Users can post stories, comment on them, and use another board to post new threads. 
+Users can post stories, comment, and use another board to post new threads on theme, style etc. 
 
 Built using React and Redux, with a Google Firestore database and hosted on Firebase
 
